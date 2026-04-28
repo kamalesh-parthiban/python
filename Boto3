@@ -15,3 +15,16 @@ With boto3:
   Write Python code ✅
   Automate everything ✅
   Talk to any AWS service ✅
+
+How it works:
+
+import boto3
+
+# Create a client for any AWS service
+client = boto3.client('s3')           # S3
+client = boto3.client('ec2')          # EC2
+client = boto3.client('sns')          # SNS
+client = boto3.client('sqs')          # SQS
+client = boto3.client('lambda')       # Lambda
+client = boto3.client('autoscaling')  # ASG
+client = boto3.client('eks')          # EKS
