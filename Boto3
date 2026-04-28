@@ -1,0 +1,17 @@
+Install boto3:
+
+pip install boto3
+
+boto3 is the official AWS SDK for Python. It lets you interact with any AWS service programmatically — S3, EC2, SNS, SQS, Lambda, ASG and more. You create a client for the service and call methods on it. Authentication is handled via IAM roles when running on AWS services like Lambda or EC2 — no hardcoded credentials needed. In our auto remediation Lambda we used boto3 autoscaling client to scale the ASG and SNS client to send email notifications.
+
+Simple meaning:
+
+Without boto3:
+  Use AWS Console manually ❌
+  Click buttons every time ❌
+  Cannot automate ❌
+
+With boto3:
+  Write Python code ✅
+  Automate everything ✅
+  Talk to any AWS service ✅
